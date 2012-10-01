@@ -1,0 +1,35 @@
+body
+{
+background-image: url("http://spf.fotolog.com/photo/15/61/4/juanma_buitre/1200901747_f.jpg");
+background-repeat: no-repeat;
+background-position: 50% 35%;
+text-align: center;
+}
+
+h0
+{
+
+font-family: "Times New Roman", serif;
+font-style: italic;
+font-size:40px;
+}
+
+h1
+{
+border-style:solid;
+border-top-width:thin;
+border-right-width:medium;
+border-bottom-width:thick;
+border-left-width:10px;
+background-color: #A9BCF5;
+text-align:center;
+}
+
+h2
+{
+font-family: "Times New Roman", serif;
+font-style: italic;
+font-size:25px;
+}
+
+

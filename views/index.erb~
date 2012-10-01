@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Rock, Paper and Scissor</title>
+<link rel = "stylesheet" type="text/css" href = "/css/style.css"/>
+</head>
+<body>
+<h0><b> Rock, Paper and Scissor </b></h0><br>
+<h2> Computer chooses: <%= @computer_throw %></h2>
+<h2> You choose: <%= @player_throw %> </h2>
+<br><br><br><br><br><br><br><br>
+<h1> <%= @answer %> </h1>
+</body>
+</html>

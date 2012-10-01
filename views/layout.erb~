@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Rock,PaperAndScissor</title>
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+	<body>
+		
+
+		<div class="pull-center">
+			<form action="/throw" method="post">
+				<br><br><br><br><br><br><br><br><br>
+				<select name="option">
+					<option value="rock">Rock</option>
+					<option value="paper">Paper</option>
+					<option value="scissor">Scissor</option>
+				</select>
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+	</body>
+</html>
