@@ -1,0 +1,48 @@
+   <div id="wrap">
+      <div id="menu">
+         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </div>
+      <div id="top_padding"></div>
+         <div id="content_top"></div>				
+         <div id="content_bg_repeat">
+            <div class="inside">
+               <div class="row-1 outdent">
+                  <div class="wrapper">
+                     <div class="metam1">
+                    <!-- .box1 -->
+                        <div class="box1">
+                           <h2>¡Registrate ya!</h2><br>  
+                           <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+                           <%= devise_error_messages! %>
+
+                           <div><h1><%= f.label :username %><br />
+                           <%= f.text_field :username %></h1></div>
+
+ 
+                           <div><h1><%= f.label :email %><br />
+                           <%= f.email_field :email %></h1></div>
+
+                           <div><h1><%= f.label :password %><br />
+                           <%= f.password_field :password %></h1></div>
+
+                           <div><h1><%= f.label :password_confirmation %><br />
+                           <%= f.password_field :password_confirmation %></h1></div>
+                           <br>
+                           <div><h1><%= f.submit "Registrar" %></h1></div>
+                           <% end %>
+
+                           <%= render "devise/shared/links" %>
+                        </div>
+                     </div>
+              	</div>
+              </div>
+            </div>
+         </div>
+         <div id="content_bottom"></div>
+

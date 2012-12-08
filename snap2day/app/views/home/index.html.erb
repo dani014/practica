@@ -1,0 +1,53 @@
+<%unless user_signed_in? -%>
+   <div id="wrap">
+      <div id="menu">
+         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </div>
+      <div id="top_padding"></div>
+         <div id="prew_img">
+            <ul class="round">
+               <li><img src="images/teide.jpg" alt="" /></li>
+               <li><img src="images/roque.jpg" alt="" /></li>
+               <li><img src="images/bonanza.jpg" alt="" /></li>
+               <li><img src="images/maspalomas.jpg" alt="" /></li>
+               <li><img src="images/verdes.jpg" alt="" /></li>
+               <li><img src="images/dunas.jpg" alt="" /></li>
+               <li><img src="images/muchachos.jpg" alt="" /></li>
+
+            </ul>
+            <script type="text/javascript" src="javascripts/jquery.js"></script>
+            <script type="text/javascript" src="javascripts/jquery.roundabout.js"></script>
+            <script type="text/javascript">
+               $(document).ready(function() {
+               $('.round').roundabout();
+               });
+            </script>
+         </div>
+         <div id="content_top"></div>				
+         <div id="content_bg_repeat">
+            <div class="inside">
+               <div class="row-1 outdent">
+                  <div class="wrapper">
+                     <div class="metam1">
+                    <!-- .box1 -->
+                        <div class="box1">
+                           <h2>Bienvenido a Snap2Day</h2>
+                           <br>
+                           <h1>Comunidad para los aficionados a la fotografia, donde podrás compartir tus fotos y votar las fotos de los miembros de la comunidad</h1>
+                           <br><br><br><br>
+                           <h1><%= link_to "¡Registrate ya!", new_user_registration_path %>  o    <%= link_to "Inicia sesión", new_user_session_path %> </h1> 
+                        </div>
+                     </div>
+              	</div>
+              </div>
+            </div>
+					
+				</div>
+				<div id="content_bottom"></div>
+<% end -%>

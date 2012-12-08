@@ -1,0 +1,45 @@
+   <div id="wrap">
+      <div id="menu">
+         <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </div>
+      <div id="top_padding"></div>
+         <div id="content_top"></div>				
+         <div id="content_bg_repeat">
+            <div class="inside">
+               <div class="row-1 outdent">
+                  <div class="wrapper">
+                     <div class="metam1">
+                    <!-- .box1 -->
+                        <div class="box1">
+                           <h2>Iniciar sesión</h2><br>  
+
+                           <%= form_for(resource_name, :url => session_path(resource_name)) do |f| %>   
+
+                           <h1><%= f.label :username %>
+                           <%= f.text_field :username %></h1>
+                           <h1><%= f.label :password %>   
+                           <%= f.password_field :password %></h1>  
+  
+                           <% if devise_mapping.rememberable? -%>   
+                           <p><h1><%= f.check_box :remember_me %> <%= f.label :remember_me %></h1></p>   
+                           <% end -%>  
+  
+                           <p><h1><%= f.submit "Inicio" %></h1></p>  
+                           <% end %>  
+  
+                           <%= render :partial => "devise/shared/links" %> 
+
+                        </div>
+                     </div>
+              	</div>
+              </div>
+            </div>
+         </div>
+         <div id="content_bottom"></div>
+
